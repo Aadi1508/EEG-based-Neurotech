@@ -4,16 +4,11 @@ A multimodal early-screening system for **prosopagnosia (face blindness)** in ch
 
 📄 **Research work is currently under publication** — paper draft included in this repo.
 
-**Authors:** R. Lakshmi¹ (Assistant Professor), Anapalli Arjun², Aadithya Arunachalam², Varun Radhakrishnan²
-¹Department of AI & DS, SRM Valliammai Engineering College · ²Student authors
-
 GitHub collaboration: [@arjun-anapalli](https://github.com/arjun-anapalli) & [@Aadi1508](https://github.com/Aadi1508)
 
 ## Abstract
 
 Prosopagnosia frequently goes undiagnosed in children due to subtle symptoms and a lack of effective screening tools. Existing methods rely on lengthy behavioral assessments or subjective self-reporting. This project presents an integrated early-screening framework combining EEG signal analysis with diagnosis-specific questionnaires. EEG is recorded while participants view familiar and unfamiliar faces, capturing neural responses tied to face perception. After preprocessing (bandpass filtering, ICA, epoch segmentation) to extract event-related potentials — particularly the **N170** component — a hybrid **CRNN (Convolutional Recurrent Neural Network)** analyzes spatial and temporal features in the EEG. Behavioral questionnaire data is collected in parallel, and both modalities are combined via a decision fusion module to produce a screening prediction with a confidence score, surfaced through a web-based dashboard with exportable clinical reports.
-
-**The fused system achieves 96% classification accuracy.**
 
 ## How it works
 
